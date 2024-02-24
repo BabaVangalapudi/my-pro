@@ -16,7 +16,8 @@ input{
     display: flex;
     flex-direction: column;
     align-items: center;
-    background-image: linear-gradient(to right,rgb(227, 164, 164), rgb(149, 235, 149));
+    /* background-image: linear-gradient(to right,rgb(227, 164, 164), rgb(149, 235, 149)); */
+    background-image: url('bg-image.jpg');
     background-size: cover;
     background-repeat: no-repeat;
 }
@@ -27,7 +28,6 @@ input{
     margin-top: 20px;
     border-radius: 15px;
     box-shadow: 3px 8px 8px #888888;
-    background-color: white;
 }
 ul{
     list-style: none;
