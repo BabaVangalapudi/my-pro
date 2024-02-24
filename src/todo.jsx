@@ -20,6 +20,7 @@ const TodolistApp = () => {
     }
     const handleAdd = (e)=>{
         e.preventDefault();
+        if(message.text !== ""){
         let newTodo ={
             text:message.text,
             id: new Date().getTime().toString()
@@ -29,6 +30,9 @@ const TodolistApp = () => {
             text:"",
             id:""
         });
+        }else{
+            alert("todo can't be empty")
+        }
     }
     const onHandleDelete=(id)=>{
        const newtodoList = list.filter((each)=>{
