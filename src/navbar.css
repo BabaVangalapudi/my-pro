@@ -1,0 +1,21 @@
+body{
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    padding: 0;
+    /* cursor: none!important; */
+}
+.container{
+    height: 100vh;
+    width: 100%;
+}
+
+ul{
+    list-style: none;
+    display: flex;
+    justify-content: space-around;
+}
+.navcontainer{
+    padding: 1rem;
+    position: sticky;
+    top: 0;
+    background-color: aqua;
+}

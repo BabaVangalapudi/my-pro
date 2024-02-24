@@ -1,0 +1,68 @@
+body{
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0;
+}
+input{
+    padding: 1rem;
+    width: 200px;
+    border-radius: 6px;
+    font-size: 1rem;
+    border: 1px solid purple;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+.container{
+    width: 100vw;
+    height:100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    /* background-image: linear-gradient(to right,rgb(227, 164, 164), rgb(149, 235, 149)); */
+    background-image: url('bg-image.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.todo-container{
+    padding: 30px;
+    width: 600px;
+    text-align: center;
+    margin-top: 20px;
+    border-radius: 15px;
+    backdrop-filter: blur(5px);
+    box-shadow: 3px 8px 8px #888888;
+}
+ul{
+    list-style: none;
+}
+li p{
+    font-size: 17px;
+    color:black;
+}
+li{
+    display: flex;
+    gap: 20px;
+    align-items: center;
+    justify-content: space-between;
+    border: 1px solid green;
+    margin-top: 10px;
+    padding: 2px 15px;
+    border-radius: 10px;
+}
+button{
+    padding: 8px 25px;
+    background-color: aquamarine;
+    border: none;
+    border-radius: 10px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 16px;
+    text-transform: uppercase;
+    margin-left: 10px;
+}
+.addtodo{
+    display: flex;
+    gap: 20px;
+    align-items: center;
+    justify-content: center;
+}
+.notodos{
+    text-transform: uppercase;
+}
