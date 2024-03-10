@@ -20,6 +20,7 @@ const TodolistApp = () => {
     }
     const handleAdd = (e)=>{
         e.preventDefault();
+        if(message.text !== ""){
         let newTodo ={
             text:message.text,
             id: new Date().getTime().toString()
@@ -29,6 +30,9 @@ const TodolistApp = () => {
             text:"",
             id:""
         });
+        }else{
+            alert("input can't be empty")
+        }
     }
     const onHandleDelete=(id)=>{
        const newtodoList = list.filter((each)=>{
@@ -53,6 +57,7 @@ const TodolistApp = () => {
    }
    const handleUpdate =(e)=>{
     e.preventDefault()
+       if(message.text !==""){
         const finalTodos = list.map((each)=>{
             if (each.id===editingitem.id){
                 return{
@@ -72,6 +77,9 @@ const TodolistApp = () => {
         id:'',
         isediting:false
     })
+       }else{
+           alert("input can't be empty")
+       }
    }
    const handleSearch = (e) => {
     setSearchText(e.target.value);

@@ -16,8 +16,8 @@ input{
     display: flex;
     flex-direction: column;
     align-items: center;
-    /* background-image: linear-gradient(to right,rgb(227, 164, 164), rgb(149, 235, 149)); */
-    background-image: url('bg-image.jpg');
+    background-image: linear-gradient(180 degrees,rgb(227, 164, 164), rgb(149, 235, 149),60%);
+/*     background-image: url('bg-image.jpg'); */
     background-size: cover;
     background-repeat: no-repeat;
 }
